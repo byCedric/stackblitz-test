@@ -1,0 +1,25 @@
+{
+  "name": "@lunchbox/protocol",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./build",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+.tsx?$": ["ts-jest"]
+    }
+  }
+}

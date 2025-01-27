@@ -1,7 +1,11 @@
 {
-  "name": "stackblitz-lunchbox",
+  "name": "stackblitz-expo",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "workspaces": [
+    ".",
+    "packages/*"
+  ],
   "scripts": {
     "start": "node ./start.js",
     "reset-project": "node ./scripts/reset-project.js",
@@ -16,9 +20,10 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
+    "@lunchbox/protocol": "*",
+    "@lunchbox/tunnel": "*",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
-    "cloudflare-tunnel": "file:./tarballs/cloudflare-tunnel-0.0.0.tgz",
     "expo": "~52.0.27",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.4",
