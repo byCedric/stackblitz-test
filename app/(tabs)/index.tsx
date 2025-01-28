@@ -4,8 +4,11 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { testContainers } from '@/actions/testContainers';
 
 export default function HomeScreen() {
+  testContainers().then((r) => console.log('RESULT', r)).catch((e) => console.error('RESULT', e));
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
