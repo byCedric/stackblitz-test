@@ -3,7 +3,7 @@ const { hostname } = require('node:os');
 const fs = require('node:fs');
 
 // Ensure .env file exists
-const host = `${hostname()}.0kb.zip`;
+const host = `${hostname()}.boltexpo.dev`;
 fs.writeFileSync(
   '.env',
   [
