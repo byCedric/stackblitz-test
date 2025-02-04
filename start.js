@@ -9,7 +9,7 @@ fs.writeFileSync(
   [
     `EXPO_NO_TELEMETRY=1`,
     `EXPO_NO_DEPENDENCY_VALIDATION=1`,
-    `EXPO_PACKAGER_PROXY_URL=http://${host}`,
+    `EXPO_PACKAGER_PROXY_URL=https://${host}`,
     `REACT_NATIVE_PACKAGER_HOSTNAME=${host}`,
     `EXPO_CLOUDFLARE_PROXY_URL=wss://${host}`,
   ].join('\n')
