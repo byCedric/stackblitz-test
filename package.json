@@ -54,5 +54,11 @@
     "react-test-renderer": "18.3.1",
     "typescript": "^5.3.3"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "@expo/ws-tunnel": "1.0.2"
+  },
+  "overrides": {
+    "@expo/ws-tunnel": "1.0.2"
+  }
 }
